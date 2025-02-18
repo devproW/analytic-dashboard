@@ -12,7 +12,7 @@ function PopulationPage() {
   const [stats, setStats] = useState(null);
 
   useEffect(() => {
-    fetch("http://35.202.158.173/population_data/v1")
+    fetch("https://analytic-api.duckdns.org/population_data/v1")
       .then((res) => res.json())
       .then((data) => setStats(data));
   }, []);
